@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <form class="container">
+        <h1>BMI CALCULATOR</h1>
+        <label for="age">AGE :</label><br><br>
+        <input type="number" id="age" class="inputnumbers"><br><br>
+        <label for="weight">WEIGHT : <span style="color: red;">*</span></label><br><br>
+        <input type="text" id="weight" placeholder="in KGs" class="inputnumbers" required><br><br>
+        <label for="height">HEIGHT : <span style="color: red;">*</span></label><br><br>
+        <input type="number" id="height" placeholder="in meters" class="inputnumbers" required>
+        <input type="submit" class="button" onclick="calculateBMI()" value="Calculate">
+        <input type="text" placeholder="output" class="inputnumbers" disabled id="output"><br>
+        <input type="button" value="Clear" class="button" onClick="window.location.reload(true)">
+    </form>
+    <div class="desc">
+        <h2>What is your BMI</h2>
+        <ul>
+            <li>&lt;18.4 Under weight</li>
+            <li>18.5 - 24.9 Normal Weight</li>
+            <li>25 - 29.9 Over weight</li>
+            <li>30 - 34.5 Obese</li>
+            <li>35 &gt; Extremely Obese </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
